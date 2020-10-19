@@ -125,3 +125,8 @@ Référence technique <a href="https://www.w3schools.com/">w3schools.com</>
 <div align="center">
  --- FIN ---
  </div>
+*emojis 
+*compétences
+*lien linkedin
+*contenu de la formation
+*enlever les commentaires de "formation"
