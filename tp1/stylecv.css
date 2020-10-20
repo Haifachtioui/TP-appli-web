@@ -42,6 +42,10 @@ table{
     padding: 5px;
     box-shadow: 5px 10px rgba(43, 25, 110, 0.37) ;
 }
+img:hover{
+  width:50px;
+  transform :scale(2);
+}
 h1{
 
 text-transform: uppercase;
