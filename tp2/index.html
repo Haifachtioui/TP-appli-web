@@ -20,17 +20,43 @@
           }
         </style>
         
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="js/main.js"></script>-->
+     
+    
+        <script src="js/formulaire.js"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
-    <body>        
-        <h1>tp2</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-	<form class="login_form" method="post" name="form" onsubmit="return validated()">
+    <body>            
+        <form id="formAW" onsubmit="validation()">
 		<label for="Nom">Nom</label>
-		<input type="text" id="nom" name="Nom" placeholder="Enter your given name" maxlength=5 />
-        <img src="../galilee.png" alt="Logo Galilee"/>
+        <input type="text" id="nom" name="Nom" placeholder="entrer votre nom" maxlength=20 minlength=5 class="inputAW"/>
+    </br>
+
+    <label for="Prenom">Prenom</label>
+    <input type="text" id="prenom" name="Prenom" placeholder="entrer votre prénom" maxlength=20 minlength=5 class="inputAW"/>
+    
+</br> 
+
+    <label for="date">Date</label>
+    <input type="date" id="date" name="Date" placeholder="JJ/MM/AAAA"  class="inputAW"/>
+    <br/> 
+
+    <label for="Adresse">Adresse</label>
+    <input type="text" id="adresse" name="Adresse" placeholder="entrer votre adresse postale" maxlength=50 minlength=5 class="inputAW"/>
+</br> 
+<label for="Adresse mail">Adresse mail</label>
+    <input type="email" id="adresse mail" name="Adresse mail" placeholder="exemple: jean@gmail.com" maxlength=30 minlength=5 class="inputAW"/>   
+</br> 
+
+
+<!--vous pouvez utiliser un tableau HTML pour aligner tous les éléments!!!!!!!!!!!!!!!!!!!!!-->
+
+
+
+<p>
+    <input type="button" value="Valider" onclick="validation()"/>
+    </p>
+</form>
+    <div id="error"></div>
+<div id="resultat"></div>
     </body>
 </html>
