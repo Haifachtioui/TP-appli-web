@@ -10,21 +10,14 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <style>
-          body{
-              background-color: #e9ebee;              
-              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-              font-size: 16px;
-              margin: 0 auto;
-              max-width: 800px;              
-          }
-        </style>
         
      
     
-        <script src="js/formulaire.js"></script>
+        <script type="text/javascript" src="js/formulaire.js"></script>
         <link rel="stylesheet" href="style.css">
+        <h1> Saisaie d'une fiche "personne"</h1> 
     </head>
+    
     <body>            
         <form id="formAW" onsubmit="validation()">
 		<label for="Nom">Nom</label>
@@ -46,14 +39,17 @@
 <label for="Adresse mail">Adresse mail</label>
     <input type="email" id="adresse mail" name="Adresse mail" placeholder="exemple: jean@gmail.com" maxlength=30 minlength=5 class="inputAW"/>   
 </br> 
-
-
-<!--vous pouvez utiliser un tableau HTML pour aligner tous les éléments!!!!!!!!!!!!!!!!!!!!!-->
+<label for="Sexe">Sexe</label>
+<select name="sexe" id="sexe"> 
+    <option value="Homme">Homme</option>
+    <option value="Femme">Femme</option>
+</select>
+</br>
 
 
 
 <p>
-    <input type="button" value="Valider" onclick="validation()"/>
+    <input type="button" id="valider" value="Valider" onclick="validation()"/>
     </p>
 </form>
     <div id="error"></div>
